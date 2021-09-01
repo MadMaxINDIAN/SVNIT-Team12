@@ -19,7 +19,7 @@ class HistoryBox extends Component {
                         <th className="data-cell">Low</th>
                         <th className="data-cell">Date</th>
                     </tr>
-                    {this.props.historyData.map(row => {
+                    {this.props.historyData.reverse().map(row => {
                         return (
                             <tr>
                                 <td width={"15%"}>{row.ticker}</td>
